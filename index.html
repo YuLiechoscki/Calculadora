@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="fundo">
+        <div class="brilho brilho1"></div>
+        <div class="brilho brilho2"></div>
+    </div>
+    <div class="calculadora">
+        <p class="titulo">Calculadora</p>
+        <div class="visor">
+            <p id="historico"></p>
+            <div id="resultado"></div>
+        </div>
+        <div class="teclado">
+            <button class="botao limpar" onclick="clean()">C</button>
+            <button class="botao apagar" onclick="back()">⌫</button>
+            <button class="botao operador" onclick="insert('÷')">÷</button>
+            <button class="botao operador" onclick="insert('×')">×</button>
+
+            <button class="botao" onclick="insert('7')">7</button>
+            <button class="botao" onclick="insert('8')">8</button>
+            <button class="botao" onclick="insert('9')">9</button>
+            <button class="botao operador" onclick="insert('-')">−</button>
+
+            <button class="botao" onclick="insert('4')">4</button>
+            <button class="botao" onclick="insert('5')">5</button>
+            <button class="botao" onclick="insert('6')">6</button>
+            <button class="botao operador" onclick="insert('+')">+</button>
+
+            <button class="botao" onclick="insert('1')">1</button>
+            <button class="botao" onclick="insert('2')">2</button>
+            <button class="botao" onclick="insert('3')">3</button>
+            <button class="botao igual" onclick="calcular()">=</button>
+
+            <button class="botao zero" onclick="insert('0')">0</button>
+            <button class="botao" onclick="insert('.')">.</button>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
